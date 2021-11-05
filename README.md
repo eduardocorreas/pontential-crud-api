@@ -62,11 +62,11 @@ Apaga o registro de um desenvolvedor
 
 # Testes
 
-No desenvolvimento do backend da aplicação implementei **teste unitário** como descritos abaixo:
+No desenvolvimento do backend da aplicação implementei **teste unitário** como descritos abaixo: <br/>
 
-**check_if_user_column_is_correct:** Utilizado para validar se o número de colunas do banco de dados é igual ao fillable do model
+**check_if_user_column_is_correct:** Utilizado para validar se o número de colunas do banco de dados é igual ao fillable do model <br/>
 
-Foi implementado também **testes de integração** como descritos abaixo:
-**get_all_developers:** Verifica se a rota /developers retorna status 200
-**get_developers_by_id:** Verifica se a rota /developers/{id} retorna status 200 quando passado um id válido
-**error_when_pass_a_failure_id:** Verifica se a rota /developers/{id} retorna status 404 quando passado um id inválido
+Foi implementado também **testes de integração** como descritos abaixo: <br/>
+**get_all_developers:** Verifica se a rota /developers retorna status 200 <br/>
+**get_developers_by_id:** Verifica se a rota /developers/{id} retorna status 200 quando passado um id válido <br/>
+**error_when_pass_a_failure_id:** Verifica se a rota /developers/{id} retorna status 404 quando passado um id inválido <br/>
