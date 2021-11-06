@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Developer extends Model
 {
     use HasFactory;
-    protected $fillable =['nome', 'idade', 'sexo', 'datanascimento', 'hobby'];
+    protected $fillable =['nome', 'idade', 'sexo', 'datanascimento', 'hobby', 'especialidade'];
 }

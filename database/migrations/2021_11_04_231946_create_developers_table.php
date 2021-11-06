@@ -19,6 +19,7 @@ class CreateDevelopersTable extends Migration
             $table->string('sexo', 1);
             $table->integer('idade');
             $table->string('hobby', 255);
+            $table->enum('especialidade', ['frontend', 'backend','fullstack']);
             $table->date('datanascimento', 255);
             $table->timestamps();
         });

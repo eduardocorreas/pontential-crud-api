@@ -31,6 +31,8 @@ class DeveloperController extends Controller
                     $developers = Developer::where('hobby',$request->hobby);
                 }else if(isset($request->datanascimento)){
                     $developers = Developer::where('datanascimento',$request->datanascimento);
+                }else if(isset($request->especialidade)){
+                    $developers = Developer::where('especialidade',$request->especialidade);
                 }
 
                 return response()->json($developers->paginate(10), 200);
@@ -50,6 +52,7 @@ class DeveloperController extends Controller
                 'idade'=> $request->idade,
                 'hobby'=> $request->hobby,
                 'datanascimento'=> $request->datanascimento,
+                'especialidade'=> $request->especialidade,
             ]);
 
             return response()->json(['message'=>'Desenvolvedor cadastrado com sucesso'], 201);

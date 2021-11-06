@@ -13,6 +13,7 @@ sexo: char
 idade: integer
 hobby: varchar
 datanascimento: date
+especialidade: enum
 ```
 
 # API endpoints
